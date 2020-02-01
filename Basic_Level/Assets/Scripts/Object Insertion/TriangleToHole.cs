@@ -26,8 +26,10 @@ public class TriangleToHole : MonoBehaviour
 
             transform.parent = other.transform;
             transform.localPosition = new Vector3(0, 0, 0);
-            transform.localRotation = other.transform.localRotation;
+            transform.rotation = other.transform.localRotation;
             rigid.velocity = new Vector3(0, 0, 0);
+
+            rigid.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationY;
 
             Destroy(pickUp);
 

@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
             inputVector *= sprintMulti;
         }
 
-        Debug.Log(inputVector.z);
+        //Debug.Log(inputVector.z);
 
         rb.transform.position += transform.forward * inputVector.z ;
         rb.transform.position += transform.right * inputVector.x;
