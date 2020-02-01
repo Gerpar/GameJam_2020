@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
 
         rb.transform.position += transform.forward * inputVector.z ;
         rb.transform.position += transform.right * inputVector.x;
+
+        rb.velocity = new Vector3(0, rb.velocity.y, 0);
     }
 
     void Jumping()
