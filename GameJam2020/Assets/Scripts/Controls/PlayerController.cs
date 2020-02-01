@@ -25,6 +25,13 @@ public class PlayerController : MonoBehaviour
     float timeToNextFootstep; // Keeps track of when the next footstep can play
     AudioSource src;
     bool firstFootstep = true;  // Keeps track of which footstep sound to play
+    bool flashlightOn = true;   // Keeps track of if the flashlight is on to communicate with AI
+
+    public bool FlashLightOn
+    {
+        get { return flashlightOn; }
+        set { flashlightOn = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -102,8 +109,13 @@ public class PlayerController : MonoBehaviour
         camera.transform.eulerAngles = new Vector3(camRot.y, camRot.x, 0.0f); // Rotate camera attached to player
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         canJump = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canJump = false;
     }
 }
