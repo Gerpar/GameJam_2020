@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GGJ20_SceneStartMenu.unity
-    guid: bf5c7e6e6e894484995daef8024dea8f
+    path: Assets/Scenes/GGJ20_SceneTitle.unity
+    guid: 27f27b1a34874f347befb97a82f78681
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/GGJ20_SceneCredits.unity
+    guid: 074f3c0bb4e8267488c1c9c914bb652e
   m_configObjects: {}
