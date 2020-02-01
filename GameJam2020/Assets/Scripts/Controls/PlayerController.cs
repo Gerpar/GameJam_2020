@@ -100,8 +100,8 @@ public class PlayerController : MonoBehaviour
 
     void Rotation()
     { 
-        camRot.x += cameraSensitivity * Input.GetAxis("Mouse X");
-        camRot.y -= cameraSensitivity * Input.GetAxis("Mouse Y");
+        camRot.x += cameraSensitivity * Input.GetAxis("Mouse X") * Time.deltaTime;
+        camRot.y -= cameraSensitivity * Input.GetAxis("Mouse Y") * Time.deltaTime;
 
         camRot.y = Mathf.Clamp(camRot.y, minCamLimit, maxCamLimit);  // Clamp vertical camera rotation
 
