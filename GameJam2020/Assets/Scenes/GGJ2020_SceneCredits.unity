@@ -303,8 +303,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n2D ART\r\n\n\r\n3D MODELING\r\n\n\n\r\nPROGRAMMING\r\n\n\r\nSOUNDS \r\n\r\nUI\r\n\n\r\nSTORY\r\n\n\r\nDESIGN\r\n\n\n\r\nANIMATIONS\r\n\r\nPOWERED
-    BY UNITY\r\n\r\nSPECIAL THANKS\r\nADOBE PHOTOSHOP\r\nAUTODESK 3DS MAX"
+  m_Text: "\n2D ART\r\nAustin Grover\n\r\n3D MODELING\r\n\n\n\n\r\nPROGRAMMING\r\n\n\r\nUI\r\n\n\r\nSTORY\r\nAndrew
+    Guscott\n\r\nDESIGN\r\n\n\n\r\n\nANIMATIONS\r\nGerad Paris\n\r\nPOWERED BY UNITY\r\n\r\nSPECIAL
+    THANKS\r\nADOBE PHOTOSHOP\r\nAUTODESK 3DS MAX"
 --- !u!222 &155822482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -438,8 +439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -240.545, y: 0}
-  m_SizeDelta: {x: -481.09, y: 0}
+  m_AnchoredPosition: {x: -290.76, y: 0}
+  m_SizeDelta: {x: -581.52, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &526409861
 MonoBehaviour:
@@ -474,8 +475,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\nAustin Grover\n\n\nAidan Hastie\r\nJacobo G. Montoya\n\r\n\nDylan Manders\r\n\n\r\n\n\nAndrew
-    Anderious\r\n\r\n\nAndrew Guscott\r\n\r\n\nKobi Byfield\r\nAustin Grover\r\r\n\n"
+  m_Text: "\n\n\n\n\nAidan Hastie\r\nJacobo G. Montoya\nAustin Grover\n\r\n\nDylan
+    Manders\r\n\n\nAndrew Anderious\r\n\r\n\n\n\r\n\nKobi Byfield\r\nAustin Grover\r\r\nDenis
+    Nguyen\n\n"
 --- !u!222 &526409862
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -743,8 +745,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 243.44, y: 0}
-  m_SizeDelta: {x: -486.88, y: 0}
+  m_AnchoredPosition: {x: 288.55, y: 0}
+  m_SizeDelta: {x: -577.1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190751947
 MonoBehaviour:
@@ -779,8 +781,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\n\n\n\nBrandon Hodkin\r\nAndrew Guscott\n\r\n\nGerad Paris\r\n\n\r\n\n\r\nDenis
-    Nguyen\n\r\n\n\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n\n"
+  m_Text: "\n\n\n\n\nBrandon Hodkin\r\nAndrew Guscott\n\r\n\n\nGerad Paris\r\n\n\r\nDenis
+    Nguyen\n\r\n\n\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n"
 --- !u!222 &1190751948
 CanvasRenderer:
   m_ObjectHideFlags: 0
