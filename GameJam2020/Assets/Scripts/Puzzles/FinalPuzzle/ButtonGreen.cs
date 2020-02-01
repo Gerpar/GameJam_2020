@@ -14,12 +14,18 @@ public class ButtonGreen : MonoBehaviour
 
     public int lightsInTriangle = 0;
     public List<int> triLightsToToggle;
+    public List<GameObject> triWires;
+
 
     public int lightsInSquare = 0;
     public List<int> squLightsToToggle;
+    public List<GameObject> squWires;
+
 
     public int lightsInCircle = 0;
     public List<int> cirLightsToToggle;
+    public List<GameObject> cirWires;
+
 
     private bool triangle;
     private bool square;
@@ -30,6 +36,45 @@ public class ButtonGreen : MonoBehaviour
         triangle = triangleLock.GetComponent<TriangleToHole>().triangleInHole;
         square = squareLock.GetComponent<SquareToHole>().squareInHole;
         circle = circleLock.GetComponent<CircleToHole>().circleInHole;
+
+        if (triangle)
+        {
+            for (int i = 0; i < triWires.Count; i++)
+            {
+                triWires[i].GetComponent<MeshRenderer>().enabled = true;
+            }
+        }
+        else if (square)
+        {
+            for (int i = 0; i < squWires.Count; i++)
+            {
+                squWires[i].GetComponent<MeshRenderer>().enabled = true;
+            }
+        }
+        else if (circle)
+        {
+            for (int i = 0; i < cirWires.Count; i++)
+            {
+                cirWires[i].GetComponent<MeshRenderer>().enabled = true;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < triWires.Count; i++)
+            {
+                triWires[i].GetComponent<MeshRenderer>().enabled = false;
+            }
+
+            for (int i = 0; i < squWires.Count; i++)
+            {
+                squWires[i].GetComponent<MeshRenderer>().enabled = false;
+            }
+
+            for (int i = 0; i < cirWires.Count; i++)
+            {
+                cirWires[i].GetComponent<MeshRenderer>().enabled = false;
+            }
+        }
     }
 
     private void OnMouseDown()

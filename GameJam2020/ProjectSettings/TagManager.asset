@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SquareHole
+  - ObjectHolder
+  - SquarePiece
+  - CircleHole
+  - TriangleHole
+  - TrianglePiece
+  - CirclePiece
   layers:
   - Default
   - TransparentFX
