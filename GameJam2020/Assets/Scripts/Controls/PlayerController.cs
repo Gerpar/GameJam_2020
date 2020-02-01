@@ -25,6 +25,13 @@ public class PlayerController : MonoBehaviour
     float timeToNextFootstep; // Keeps track of when the next footstep can play
     AudioSource src;
     bool firstFootstep = true;  // Keeps track of which footstep sound to play
+    bool flashlightOn = true;   // Keeps track of if the flashlight is on to communicate with AI
+
+    public bool FlashLightOn
+    {
+        get { return flashlightOn; }
+        set { flashlightOn = value; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -58,7 +65,7 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector3(0, rb.velocity.y, 0);
 
-        if(timeToNextFootstep < Time.time && inputVector != Vector3.zero)
+        if(timeToNextFootstep < Time.time && inputVector != Vector3.zero && canJump)
         {
             if(firstFootstep)
             {
@@ -105,5 +112,10 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         canJump = true;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        canJump = false;
     }
 }
