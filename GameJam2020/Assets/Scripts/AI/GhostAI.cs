@@ -7,10 +7,11 @@ public class GhostAI : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float rotationSpeed;
     [SerializeField] GameObject detectors;
-    [SerializeField] GameObject[] patrolWaypoints = new GameObject[0];
+    [SerializeField] GameObject patrolWaypointParent;
+
+    Vector3[] patrolWaypoints;
 
     GameObject playerObj;
-    Rigidbody rb;
     PlayerDetection playerDetection;
     PlayerController playerController;
     int waypointIndex;
@@ -20,9 +21,17 @@ public class GhostAI : MonoBehaviour
     void Start()
     {
         playerObj = GameObject.FindGameObjectWithTag("Player");
-        rb = GetComponent<Rigidbody>();
         playerDetection = detectors.GetComponent<PlayerDetection>();
         playerController = playerObj.GetComponent<PlayerController>();
+
+        Transform[] patrolChildren = patrolWaypointParent.GetComponentsInChildren<Transform>();
+        patrolWaypoints = new Vector3[patrolChildren.Length];
+
+        for(int i = 0; i < patrolWaypoints.Length; i++)
+        {
+            patrolWaypoints[i] = patrolChildren[i].position;
+        }
+        Destroy(patrolWaypointParent);
     }
 
     void Awake()
@@ -61,7 +70,7 @@ public class GhostAI : MonoBehaviour
     }
 
     // Coroutines
-    IEnumerator Patrol(GameObject[] waypoints)
+    IEnumerator Patrol(Vector3[] waypoints)
     {
         patrolRunning = true;
 
@@ -69,7 +78,7 @@ public class GhostAI : MonoBehaviour
         float minDist = Mathf.Infinity;
         for(int i = 0; i < patrolWaypoints.Length; i++)
         { 
-            float dist = Vector3.Distance(patrolWaypoints[i].transform.position, transform.position);
+            float dist = Vector3.Distance(waypoints[i], transform.position);
             if(dist < minDist)
             {
                 waypointIndex = i;
@@ -89,11 +98,11 @@ public class GhostAI : MonoBehaviour
         }
     }
 
-    IEnumerator MoveToWaypoint(GameObject waypoint)
+    IEnumerator MoveToWaypoint(Vector3 waypoint)
     {
-        while(Vector3.Distance(waypoint.transform.position, transform.position) > 1)
+        while(Vector3.Distance(waypoint, transform.position) > 1)
         {
-            PointTowardsPoint(waypoint.transform.position);
+            PointTowardsPoint(waypoint);
             MoveForward();
             yield return new WaitForEndOfFrame();
         }

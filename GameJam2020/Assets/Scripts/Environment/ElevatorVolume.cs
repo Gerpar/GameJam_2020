@@ -6,19 +6,6 @@ public class ElevatorVolume : MonoBehaviour
 {
     [SerializeField] float verticalSpeed;
     public bool elevatorIsOn = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player") && elevatorIsOn)
