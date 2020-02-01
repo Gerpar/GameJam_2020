@@ -303,7 +303,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nART\r\n\n\r\n3D MODELING\r\n\n\n\r\nPROGRAMMING\r\n\n\r\nSOUNDS \r\n\r\nUI\r\n\n\r\nSTORY\r\n\n\r\nDESIGN\r\n\n\n\r\nANIMATIONS\r\n\r\nPOWERED
+  m_Text: "\n2D ART\r\n\n\r\n3D MODELING\r\n\n\n\r\nPROGRAMMING\r\n\n\r\nSOUNDS \r\n\r\nUI\r\n\n\r\nSTORY\r\n\n\r\nDESIGN\r\n\n\n\r\nANIMATIONS\r\n\r\nPOWERED
     BY UNITY\r\n\r\nSPECIAL THANKS\r\nADOBE PHOTOSHOP\r\nAUTODESK 3DS MAX"
 --- !u!222 &155822482
 CanvasRenderer:
@@ -474,7 +474,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\nKobi Byfield\r\n\n\nAidan Hastie\r\n\n\r\n\nDylan Manders\r\n\n\r\n\n\nAndrew
+  m_Text: "\n\nAustin Grover\n\n\nAidan Hastie\r\nJacobo G. Montoya\n\r\n\nDylan Manders\r\n\n\r\n\n\nAndrew
     Anderious\r\n\r\n\nAndrew Guscott\r\n\r\n\nKobi Byfield\r\nAustin Grover\r\r\n\n"
 --- !u!222 &526409862
 CanvasRenderer:
@@ -779,8 +779,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\nJacobo G. Montoya\r\n\n\nBrandon Hodkin\r\n\n\r\n\nGerad Paris\r\n\n\r\n\n\r\nDenis
-    Nguyen\n\r\n\nAndrew Guscott\r\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n\n"
+  m_Text: "\n\n\n\n\nBrandon Hodkin\r\nAndrew Guscott\n\r\n\nGerad Paris\r\n\n\r\n\n\r\nDenis
+    Nguyen\n\r\n\n\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n\n"
 --- !u!222 &1190751948
 CanvasRenderer:
   m_ObjectHideFlags: 0
