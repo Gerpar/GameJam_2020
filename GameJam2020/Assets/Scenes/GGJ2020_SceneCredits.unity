@@ -781,8 +781,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\n\n\n\nAustin Grover\nAidan Hastie\n\rGerad Paris\n\n\n\nGerad Paris\r\n\n\r\nDenis
-    Nguyen\n\r\n\n\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n"
+  m_Text: "\n\n\n\n\nAustin Grover\nAidan Hastie\n\rDylan Manders\nGerad Paris\n\n\nGerad
+    Paris\r\n\n\r\nDenis Nguyen\n\r\n\n\n\r\n\nJacobo G. Montoya\r\nAndrew Guscott\r\n"
 --- !u!222 &1190751948
 CanvasRenderer:
   m_ObjectHideFlags: 0
