@@ -3,7 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - StatueGlow
+  - Enemy
+  - InteractionTrigger
+  - SquareHole
+  - ObjectHolder
+  - SquarePiece
+  - CircleHole
+  - TriangleHole
+  - TrianglePiece
+  - CirclePiece
+  - KeyCard
+  - PickupRespawn
   layers:
   - Default
   - TransparentFX
@@ -13,8 +25,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - PostProcessing
+  - ParticleCollider
   - 
   - 
   - 
