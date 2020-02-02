@@ -10553,7 +10553,7 @@ PrefabInstance:
     - target: {fileID: 3690848190714040894, guid: c9b1d9245d5043a4d97637c7aff0af9f,
         type: 3}
       propertyPath: puzzleDone
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9b1d9245d5043a4d97637c7aff0af9f, type: 3}
