@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class FlashlightController : MonoBehaviour
 {
-
     Light light;
+
+    PlayerController playerController;
     // Start is called before the first frame update
     void Start()
     {
         light = gameObject.GetComponent<Light>();
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -24,5 +26,6 @@ public class FlashlightController : MonoBehaviour
     void ToggleFlashlight()
     {
         light.enabled = !light.enabled;
+        playerController.FlashLightOn = light.enabled;
     }
 }
