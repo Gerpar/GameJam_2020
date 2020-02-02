@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8463868627725408752}
   m_Layer: 0
   m_Name: SquareObject
-  m_TagString: Untagged
+  m_TagString: SquarePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,3 +137,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
+  triangle: {fileID: 0}
+  square: {fileID: 0}
+  circle: {fileID: 0}

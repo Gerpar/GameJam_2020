@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuzzleFinalCheck : MonoBehaviour
 {
-    private bool puzzleDone = false;
+    public bool puzzleDone = false;
     [SerializeField] PuzzleSolvedLights puzzleSolvedLights;
     public int lightOnCounter = 0;
     public int maxLights = 0;

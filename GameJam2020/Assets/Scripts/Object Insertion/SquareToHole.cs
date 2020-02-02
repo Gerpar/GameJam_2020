@@ -31,8 +31,6 @@ public class SquareToHole : MonoBehaviour
 
             rigid.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationY;
 
-            //Destroy(pickUp);
-
             squareInHole = true;
             Debug.Log(squareInHole);
         }

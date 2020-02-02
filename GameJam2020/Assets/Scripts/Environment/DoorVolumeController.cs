@@ -5,8 +5,10 @@ using UnityEngine;
 public class DoorVolumeController : MonoBehaviour
 {
     [SerializeField] bool doorEnabledByDefault = false;
+    [SerializeField] GameObject linkedPuzzle;
     bool doorEnabled = false;
 
+    PuzzleFinalCheck linkedPuzzleScript;
     public bool DoorEnabled
     {
         set
@@ -22,11 +24,12 @@ public class DoorVolumeController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         doorEnabled = doorEnabledByDefault;
+        linkedPuzzleScript = linkedPuzzle.GetComponent<PuzzleFinalCheck>();
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Player") && doorEnabled)
+        if(other.CompareTag("Player") && doorEnabled && linkedPuzzleScript.puzzleDone)
         {
             SetDoorState(true);
         }

@@ -4,8 +4,24 @@ using UnityEngine;
 
 public class ElevatorVolume : MonoBehaviour
 {
+    [SerializeField] GameObject linkedPuzzle;
     [SerializeField] float verticalSpeed;
+    [SerializeField] GameObject particleObject;
     public bool elevatorIsOn = false;
+
+    PuzzleFinalCheck puzzleScript;
+
+    private void Start()
+    {
+        puzzleScript = linkedPuzzle.GetComponent<PuzzleFinalCheck>();
+    }
+
+    private void Update()
+    {
+        particleObject.SetActive(puzzleScript.puzzleDone);
+        elevatorIsOn = puzzleScript.puzzleDone;
+    }
+
     private void OnTriggerStay(Collider other)
     {
         if(other.CompareTag("Player") && elevatorIsOn)

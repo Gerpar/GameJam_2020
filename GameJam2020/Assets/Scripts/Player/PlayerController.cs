@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(!other.CompareTag("Player") && !other.CompareTag("InteractionTrigger"))
+        if(!other.CompareTag("Player") && !other.CompareTag("InteractionTrigger") && !other.CompareTag("CirclePiece") && !other.CompareTag("SquarePiece") && !other.CompareTag("TrianglePiece"))
         {
             canJump = true;
         }
