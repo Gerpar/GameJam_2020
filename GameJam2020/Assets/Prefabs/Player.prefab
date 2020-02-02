@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1377660060462843739}
   - component: {fileID: 1377660060462843738}
-  - component: {fileID: 1377660060462843737}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -92,18 +91,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1377660060462843737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377660060462843732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767fa015ef9b26e478c0058dd0c3df0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1377660060652612909
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1377660060903690400}
   - component: {fileID: 1377660060903690407}
-  - component: {fileID: 1377660060903690406}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -341,18 +327,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1377660060903690406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377660060903690401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767fa015ef9b26e478c0058dd0c3df0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1377660062018895344
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,7 +340,7 @@ GameObject:
   - component: {fileID: 1377660062018895348}
   - component: {fileID: 1377660062018895349}
   - component: {fileID: 794925335421691284}
-  - component: {fileID: 831426978788917890}
+  - component: {fileID: 4408578389034077250}
   - component: {fileID: 1377660062018895351}
   - component: {fileID: 1377660062018895352}
   m_Layer: 0
@@ -466,7 +440,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &831426978788917890
+--- !u!114 &4408578389034077250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,20 +449,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1377660062018895344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbaee43fc90d4654aa8a255327a8801e, type: 3}
+  m_Script: {fileID: 11500000, guid: 416e74d30c9b226488e03d15174aec0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpVelocity: 5
-  sprintMulti: 2
-  cameraSensitivity: 50
-  camera: {fileID: 1377660060652612915}
-  minCamLimit: -90
-  maxCamLimit: 90
-  footstepClips:
-  - {fileID: 8300000, guid: 2c8b7a0b201f1d642b0d2a58ef65fcb8, type: 3}
-  - {fileID: 8300000, guid: 8babf05103484fe489e1967a6c5b3cf4, type: 3}
-  footstepDelay: 0.25
+  moveSpeed: 0
+  jumpVelocity: 0
+  sprintMulti: 0
+  cameraSensitivity: 0
+  camera: {fileID: 0}
+  minCamLimit: 0
+  maxCamLimit: 0
+  footstepClips: []
+  footstepDelay: 0
 --- !u!54 &1377660062018895351
 Rigidbody:
   m_ObjectHideFlags: 0
