@@ -21,7 +21,7 @@ public class Pickup : MonoBehaviour
     {
         rigid = GetComponent<Rigidbody>();
 
-        if(destination == null)
+        if (destination == null)
         {
             destination = GameObject.Find("Player Object Holder");
         }
@@ -30,18 +30,13 @@ public class Pickup : MonoBehaviour
 
     private void Update()
     {
-        if(beingHeld)
+        if (beingHeld)
         {
-            rigid.velocity = Vector3.zero;
-            rigid.angularVelocity = Vector3.zero;
+            transform.localPosition = new Vector3(0, 0, 0);
+            transform.localRotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            rigid.angularVelocity = new Vector3(0, 0, 0);
+            rigid.velocity = new Vector3(0, 0, 0);
         }
-
-        if(Input.GetMouseButtonUp(0))   // Inherits velocity from being let go (Lets you throw the piece if you flick the mouse)
-        {
-            rigid.velocity = ((transform.position - lastPosition) * 30);
-        }
-
-        lastPosition = transform.position;
     }
 
     private void OnMouseDown()
@@ -102,7 +97,7 @@ public class Pickup : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("PickupRespawn"))
+        if (collision.gameObject.CompareTag("PickupRespawn"))
         {
             transform.position = originalSpawnPos;
         }
