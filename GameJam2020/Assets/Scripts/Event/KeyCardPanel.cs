@@ -11,9 +11,12 @@ public class KeyCardPanel : MonoBehaviour
         if(other.CompareTag("Player") && playerKeyCard.hasKeyCard)
         {
             //Play swipe animation
-
+            Debug.Log("Entered trigger");
             //Open door???
-
+            if(GetComponent<DoorVolumeController>())
+            {
+                gameObject.GetComponent<DoorVolumeController>().DoorEnabled = true;
+            }
         }
     }
 }

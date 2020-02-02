@@ -15,6 +15,7 @@ TagManager:
   - TrianglePiece
   - CirclePiece
   - KeyCard
+  - PickupRespawn
   layers:
   - Default
   - TransparentFX
