@@ -44,7 +44,7 @@ public class Pickup : MonoBehaviour
         Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 2.5f))    // Limit grabbing distance
+        if (Physics.Raycast(ray, out hit, 5f))    // Limit grabbing distance
         {
             if (hit.transform == transform)
             {

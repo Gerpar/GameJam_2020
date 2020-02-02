@@ -29,7 +29,8 @@ public class DoorVolumeController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Player") && doorEnabled && linkedPuzzleScript.puzzleDone)
+        doorEnabled = linkedPuzzleScript.puzzleDone;
+        if(other.CompareTag("Player") && doorEnabled)
         {
             SetDoorState(true);
         }
