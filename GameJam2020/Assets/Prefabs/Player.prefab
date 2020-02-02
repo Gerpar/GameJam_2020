@@ -49,7 +49,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -161,7 +161,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -298,7 +298,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 1377660062018895355}
   - component: {fileID: 1377660062018895348}
   - component: {fileID: 1377660062018895349}
-  - component: {fileID: 1377660062018895353}
+  - component: {fileID: 794925335421691284}
   - component: {fileID: 1377660062018895350}
   - component: {fileID: 1377660062018895351}
   - component: {fileID: 1377660062018895352}
@@ -445,15 +445,15 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377660062018895344}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c785e3b64ef68cf449b26c551c31f31d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1377660062018895353
-BoxCollider:
+--- !u!136 &794925335421691284
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -462,9 +462,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.336918, z: 1}
-  m_Center: {x: 0, y: -0.8450572, z: 0}
+  m_Radius: 0.45
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1377660062018895350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +481,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpVelocity: 5
   sprintMulti: 2
-  cameraSensitivity: 2
+  cameraSensitivity: 100
   camera: {fileID: 1377660060652612915}
   minCamLimit: -90
   maxCamLimit: 90
@@ -503,7 +504,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 80
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!82 &1377660062018895352
 AudioSource:
   m_ObjectHideFlags: 0
