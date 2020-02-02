@@ -95,7 +95,7 @@ public class Pickup : MonoBehaviour
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("PickupRespawn"))
         {
