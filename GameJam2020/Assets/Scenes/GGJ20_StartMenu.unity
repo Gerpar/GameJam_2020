@@ -889,7 +889,7 @@ MonoBehaviour:
   RightDoor: {fileID: 402182681}
   doorIsOpening: 0
   pauseMenuUI: {fileID: 1847855426}
-  levelLoad: SampleScene
+  levelLoad: GGJ2020_SceneMainLevel
   waitTime: 260
 --- !u!1 &947356223
 GameObject:
