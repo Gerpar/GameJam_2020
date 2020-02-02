@@ -109,9 +109,12 @@ public class PlayerController : MonoBehaviour
         camera.transform.eulerAngles = new Vector3(camRot.y, camRot.x, 0.0f); // Rotate camera attached to player
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        canJump = true;
+        if(!other.CompareTag("Player") && !other.CompareTag("InteractionTrigger"))
+        {
+            canJump = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
