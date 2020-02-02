@@ -6,6 +6,10 @@ public class Pickup : MonoBehaviour
 {
     public Transform destination;
 
+    public TriangleToHole triangle;
+    public SquareToHole square;
+    public CircleToHole circle;
+
     private Rigidbody rigid;
 
     private void Start()
@@ -21,6 +25,31 @@ public class Pickup : MonoBehaviour
         this.transform.parent = GameObject.Find("ObjectHolder").transform;
 
         rigid.velocity = new Vector3(0, 0, 0);
+
+        if (this.CompareTag("TrianglePiece"))
+        {
+            if (triangle.triangleInHole == true)
+            {
+                triangle.triangleInHole = false;
+            }
+        }
+
+        if (this.CompareTag("SquarePiece"))
+        {
+            if (square.squareInHole == true)
+            {
+                square.squareInHole = false;
+            }
+        }
+
+        if (this.CompareTag("CirclePiece"))
+        {
+            if (circle.circleInHole == true)
+            {
+                circle.circleInHole = false;
+            }
+        }
+
     }
 
     private void OnMouseUp()
