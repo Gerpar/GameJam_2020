@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 681, y: 494}
-  m_MaxSize: {x: 14002, y: 14044}
+  m_MinSize: {x: 683, y: 494}
+  m_MaxSize: {x: 14004, y: 14044}
   vertical: 0
-  controlID: 64
+  controlID: 149
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 65
+  controlID: 73
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-  controlID: 66
+  controlID: 74
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,8 +265,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 72}
+  m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -382,10 +382,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ecd50000
+      scrollPos: {x: 0, y: 54}
+      m_SelectedIDs: e4930000
       m_LastClickedID: 0
-      m_ExpandedIDs: da03ffffcc3bffffce3bffffe83bfffff63bfffffc3bffff5c49ffffaa4cffffc64fffff6e52ffff2457ffff205affff3c7dffffaeb0ffffc4b0ffffc2ccffff18d5ffffb43c0000c83d0000
+      m_ExpandedIDs: 429ffffff8b2ffff24caffff42caffff4acaffff5acaffffe2cfffff48410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -3.8311121, y: 1.3332819, z: -13.483784}
+    m_Target: {x: -6.3892956, y: 5.3503947, z: 7.7747774}
     speed: 2
-    m_Value: {x: -3.8311121, y: 1.3332819, z: -13.483784}
+    m_Value: {x: -6.3892956, y: 5.3503947, z: 7.7747774}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -476,13 +476,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.23011385, y: 0.5463651, z: -0.15968458, w: -0.7896516}
+    m_Target: {x: -0.25114283, y: 0.6390198, z: -0.2333476, w: -0.68896395}
     speed: 2
-    m_Value: {x: -0.2302937, y: 0.5450394, z: -0.15929814, w: -0.7902664}
+    m_Value: {x: -0.25072464, y: 0.6398793, z: -0.23366079, w: -0.68781847}
   m_Size:
-    m_Target: 14.680427
+    m_Target: 3.9174895
     speed: 2
-    m_Value: 14.048255
+    m_Value: 3.9174895
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -579,14 +579,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Prefabs
   m_LastFoldersGridSize: 64
-  m_LastProjectPath: C:\Users\Administrator\Desktop\Global_GameJam_2020\GameJam2020
+  m_LastProjectPath: C:\Users\Administrator.DESKTOP-CKJOI0V\Documents\GitHub\Global_GameJam_2020\GameJam2020
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 61}
-    m_SelectedIDs: 4e3a0000
-    m_LastClickedID: 14926
-    m_ExpandedIDs: 000000009c3400000e3500004c36000000ca9a3b
+    scrollPos: {x: 0, y: 34}
+    m_SelectedIDs: e23e0000
+    m_LastClickedID: 16098
+    m_ExpandedIDs: 000000002c39000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,7 +614,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009c340000
+    m_ExpandedIDs: 000000002c390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
