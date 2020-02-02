@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Prog_Gerad.unity
+- path: Assets/Scenes/GGJ2020_SceneTestPuzzleMechanics.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

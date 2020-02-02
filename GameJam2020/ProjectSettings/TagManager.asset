@@ -7,6 +7,14 @@ TagManager:
   - StatueGlow
   - Enemy
   - InteractionTrigger
+  - SquareHole
+  - ObjectHolder
+  - SquarePiece
+  - CircleHole
+  - TriangleHole
+  - TrianglePiece
+  - CirclePiece
+  - KeyCard
   layers:
   - Default
   - TransparentFX
