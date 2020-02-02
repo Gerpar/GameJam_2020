@@ -12,13 +12,24 @@ public class Pickup : MonoBehaviour
 
     private Rigidbody rigid;
 
+    private bool objectHeld = false;
     private void Start()
     {
         rigid = GetComponent<Rigidbody>();
     }
 
+    private void Update()
+    {
+        if(objectHeld)
+        {
+            transform.position = destination.position;
+        }
+    }
+
     private void OnMouseDown()
     {
+        objectHeld = true;
+
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<Rigidbody>().useGravity = false;
         this.transform.position = destination.position;
@@ -54,6 +65,7 @@ public class Pickup : MonoBehaviour
 
     private void OnMouseUp()
     {
+        objectHeld = false;
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
         GetComponent<BoxCollider>().enabled = true;

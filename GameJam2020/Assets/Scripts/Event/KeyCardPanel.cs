@@ -13,7 +13,7 @@ public class KeyCardPanel : MonoBehaviour
             //Play swipe animation
 
             //Open door???
-
+            GetComponent<DoorVolumeController>().DoorEnabled = true;
         }
     }
 }
