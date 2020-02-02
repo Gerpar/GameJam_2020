@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GGJ20_SceneTitle.unity
-    guid: 45dd368729611014cbcc461e048a722c
+    path: Assets/Scenes/GGJ2020_SceneTitle.unity
+    guid: 2829ded7cd4856244993765ea11db7f4
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/GGJ2020_SceneTestMain.unity
+    guid: 83face6a33c98be478e1210ffb1bdaa8
   - enabled: 1
-    path: Assets/Scenes/GGJ20_SceneCredits.unity
+    path: Assets/Scenes/GGJ2020_SceneCredits.unity
     guid: 9013841dd68de9f4788c1b5717d15e4f
   m_configObjects: {}
