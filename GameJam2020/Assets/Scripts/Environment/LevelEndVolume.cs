@@ -24,7 +24,7 @@ public class LevelEndVolume : MonoBehaviour
     {
         if(other.CompareTag("Player") && puzzleScript.puzzleDone)
         {
-            SceneManager.LoadScene("GGJ2020_SceneCredits");
+            SceneManager.LoadScene(1);
         }
     }
 }
