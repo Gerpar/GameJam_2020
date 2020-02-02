@@ -6,7 +6,6 @@ public class DoorVolumeController : MonoBehaviour
 {
     [SerializeField] bool doorEnabledByDefault = false;
     bool doorEnabled = false;
-
     public bool DoorEnabled
     {
         set
